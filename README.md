@@ -11,7 +11,7 @@
 
 This package is to displaying the model data in a Grid table.
 
-![Grid view appearance](https://github.com/itstructure/laravel-grid-view/blob/master/laravel_grid_view_appearance_en.jpg)
+![Grid view appearance](https://github.com/itstructure/laravel-grid-view/blob/master/laravel_grid_view_appearance_en.png)
 
 ## Requirements
 - laravel 5.5+ | 6+ | 7+
@@ -26,7 +26,7 @@ This package is to displaying the model data in a Grid table.
 
 Run the composer command:
 
-`composer require "itstructure/laravel-grid-view": "~1.0.0"`
+`composer require itstructure/laravel-grid-view "~1.0.1"`
 
 ### If you are testing this package from a local server directory
 
@@ -288,7 +288,7 @@ Also you can set formatter with some addition options. See the next simple examp
 
 ##### Existing form areas and main buttons
 
-![Grid view forms](https://github.com/itstructure/laravel-grid-view/blob/master/laravel_grid_view_forms_en.jpg)
+![Grid view forms](https://github.com/itstructure/laravel-grid-view/blob/master/laravel_grid_view_forms_en.png)
 
 There are two main form areas:
 
