@@ -40,6 +40,11 @@ abstract class BaseColumn
     protected $attribute;
 
     /**
+     * @var bool|null|string
+     */
+    protected $sort;
+
+    /**
      * @var string $value
      */
     protected $value;
@@ -112,6 +117,17 @@ abstract class BaseColumn
     }
 
     /**
+     * @return bool|null|string
+     */
+    public function getSort()
+    {
+        if (is_null($this->sort) || $this->sort === true) {
+            return is_null($this->attribute) ? false : $this->attribute;
+        }
+        return $this->sort;
+    }
+
+    /**
      * @return BaseFilter
      */
     public function getFilter()
@@ -143,9 +159,9 @@ abstract class BaseColumn
         } else if (is_array($this->filter)) {
             if (isset($this->filter['class']) && class_exists($this->filter['class'])) {
                 $this->setFilter(
-                    new $this->filter['class'](array_merge($this->filter, [
+                    new $this->filter['class'](array_merge($this->filter, empty($this->filter['name']) ? [
                             'name' => $this->getAttribute()
-                        ])
+                        ] : [])
                     )
                 );
             }

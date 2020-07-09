@@ -26,7 +26,7 @@ This package is to displaying the model data in a Grid table.
 
 Run the composer command:
 
-`composer require itstructure/laravel-grid-view "~1.0.1"`
+`composer require itstructure/laravel-grid-view "~1.0.2"`
 
 ### If you are testing this package from a local server directory
 
@@ -142,6 +142,29 @@ Alternative variant without a blade directive:
 
 #### Setting custom options
 
+##### Main columns
+
+Simple example:
+
+```php
+@gridView([
+    'dataProvider' => $dataProvider,
+    'columnFields' => [
+        [
+            'label' => 'First Name', // Column label.
+            'attribute' => 'first_name', // Attribute, by which the row column data will be taken from a model.
+        ],
+        [
+            'label' => 'Last Name',
+            'value' => function ($row) {
+                return $row->last_name;
+            }
+            'sort' => 'last_name' // To sort rows. Have to set if an 'attribute' is not defined for column.
+        ],
+    ]
+])
+```
+
 ##### Special columns
 
 Besides main columns, there can be the next special columns:
@@ -236,9 +259,26 @@ There are the next filter's variants:
         'dataProvider' => $dataProvider,
         'columnFields' => [
             [
-                'attribute' => 'active',
+                'attribute' => 'example_attribute',
                 'filter' => [
                     'class' => Itstructure\GridView\Filters\DropdownFilter::class,
+                    'data' => ['key' => 'value', 'key' => 'value'] // Array keys are for html <option> tag values, array values are for titles.
+                ]
+            ]
+        ]
+    ])
+    ```
+    
+    If `attribute` is not defined for column or you want to set a special filter field name:
+    
+    ```php
+    @gridView([
+        'dataProvider' => $dataProvider,
+        'columnFields' => [
+            [
+                'filter' => [
+                    'class' => Itstructure\GridView\Filters\DropdownFilter::class,
+                    'name' => 'example_name',
                     'data' => ['key' => 'value', 'key' => 'value'] // Array keys are for html <option> tag values, array values are for titles.
                 ]
             ]
@@ -330,7 +370,7 @@ $gridData = [
     'searchButtonLabel' => 'Find',
     'columnFields' => [
         [
-            'attribute' => 'id', // REQUIRED. Attribute name to get row column data.
+            'attribute' => 'id', // REQUIRED if value is not defined. Attribute name to get row column data.
             'label' => 'ID', // Column label.
             'filter' => false, // If false, then column will be without a search filter form field.,
             'htmlAttributes' => [
@@ -338,22 +378,22 @@ $gridData = [
             ]
         ],
         [
-            'attribute' => 'active', // REQUIRED. Attribute name to get row column data.
             'label' => 'Active', // Column label.
             'value' => function ($row) { // You can set 'value' as a callback function to get a row data value dynamically.
                 return '<span class="icon fas '.($row->active == 1 ? 'fa-check' : 'fa-times').'"></span>';
             },
             'filter' => [ // For dropdown it is necessary to set 'data' array. Array keys are for html <option> tag values, array values are for titles.
                 'class' => Itstructure\GridView\Filters\DropdownFilter::class, // REQUIRED. For this case it is necessary to set 'class'.
+                'name' => 'active', // REQUIRED if 'attribute' is not defined for column.
                 'data' => [ // REQUIRED.
                     0 => 'No active',
                     1 => 'Active',
                 ]
             ],
-            'format' => 'html' // To render column content without lossless of html tags, set 'html' formatter.
+            'format' => 'html', // To render column content without lossless of html tags, set 'html' formatter.
+            'sort' => 'active' // To sort rows. Have to set if an attribute is not defined for column.
         ],
         [
-            'attribute' => 'icon', // REQUIRED. Attribute name to get row column data.
             'label' => 'Icon', // Column label.
             'value' => function ($row) { // You can set 'value' as a callback function to get a row data value dynamically.
                 return $row->icon;
@@ -392,6 +432,9 @@ $gridData = [
             'class' => Itstructure\GridView\Columns\CheckboxColumn::class, // REQUIRED.
             'field' => 'delete', // REQUIRED.
             'attribute' => 'id' // REQUIRED.
+            'display' => function ($row) {
+                return {...condition to return true for displaying...};
+            }
         ]
     ]
 ];

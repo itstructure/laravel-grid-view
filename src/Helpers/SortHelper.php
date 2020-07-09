@@ -23,7 +23,7 @@ class SortHelper
      */
     public static function getSortableLink(Request $request, $column_obj): string
     {
-        if ($column_obj instanceof ActionColumn) {
+        if ($column_obj->getSort() === false || $column_obj instanceof ActionColumn) {
             return '';
         }
 
@@ -31,24 +31,24 @@ class SortHelper
 
         if (is_null($sortQuery)) {
             return $request->fullUrlWithQuery([
-                'sort' => $column_obj->getAttribute(),
+                'sort' => $column_obj->getSort(),
             ]);
         }
 
-        if ($sortQuery == $column_obj->getAttribute()) {
+        if ($sortQuery == $column_obj->getSort()) {
             return $request->fullUrlWithQuery([
-                'sort' => '-' . $column_obj->getAttribute(),
+                'sort' => '-' . $column_obj->getSort(),
             ]);
         }
 
-        if ($sortQuery == ('-' . $column_obj->getAttribute())) {
+        if ($sortQuery == ('-' . $column_obj->getSort())) {
             return $request->fullUrlWithQuery([
-                'sort' => $column_obj->getAttribute(),
+                'sort' => $column_obj->getSort(),
             ]);
         }
 
         return $request->fullUrlWithQuery([
-            'sort' => $column_obj->getAttribute(),
+            'sort' => $column_obj->getSort(),
         ]);
     }
 

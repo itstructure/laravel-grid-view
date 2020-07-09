@@ -48,7 +48,7 @@ $checkboxesExist = false;
                             @foreach($columnObjects as $column_obj)
                                 <th {!! $column_obj->buildHtmlAttributes() !!}>
 
-                                    @if($column_obj instanceof \Itstructure\GridView\Columns\ActionColumn)
+                                    @if($column_obj->getSort() === false || $column_obj instanceof \Itstructure\GridView\Columns\ActionColumn)
                                         {{ $column_obj->getLabel() }}
 
                                     @elseif($column_obj instanceof \Itstructure\GridView\Columns\CheckboxColumn)
@@ -58,6 +58,7 @@ $checkboxesExist = false;
                                         @else
                                             <input type="checkbox" id="grid_view_checkbox_main" class="form-control form-control-sm" @if($paginator->count() == 0) disabled="disabled" @endif />
                                         @endif
+
                                     @else
                                         <a href="{{ \Itstructure\GridView\Helpers\SortHelper::getSortableLink(request(), $column_obj) }}">{{ $column_obj->getLabel() }}</a>
                                     @endif
@@ -118,6 +119,7 @@ $checkboxesExist = false;
                                 </td>
                             </tr>
                         </tfoot>
+                        <input type="hidden" value="{!! csrf_token() !!}" name="_token">
                     </form>
 
                 </table>

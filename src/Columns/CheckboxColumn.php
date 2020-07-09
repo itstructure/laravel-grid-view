@@ -19,6 +19,11 @@ class CheckboxColumn extends BaseColumn
     protected $field;
 
     /**
+     * @var bool|callable
+     */
+    protected $display = true;
+
+    /**
      * ActionColumn constructor.
      * @param array $config
      */
@@ -52,6 +57,14 @@ class CheckboxColumn extends BaseColumn
      */
     public function render($row)
     {
+        if ($this->display === false) {
+            return view('grid_view::columns.checkbox-stub')->render();
+        }
+
+        if (is_callable($this->display) && !call_user_func($this->display, $row)) {
+            return view('grid_view::columns.checkbox-stub')->render();
+        }
+
         return view('grid_view::columns.checkbox', [
             'field' => $this->field,
             'value' => $this->getValue($row),
