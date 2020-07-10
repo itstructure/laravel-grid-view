@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.0.3 July 10, 2020:**
+- Container changes for `.card` bootstrap css style.
+
 **1.0.2 July 09, 2020:**
 - Ability to set filter's `name` by custom.
 - Add `sort` attribute and `getSort()` method to `BaseColumn`. Modify depended blocks.

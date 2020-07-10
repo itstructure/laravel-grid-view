@@ -145,7 +145,7 @@ class Grid
             'useSendButtonAnyway' => $this->useSendButtonAnyway,
             'searchButtonLabel' => $this->getSearchButtonLabel(),
             'resetButtonLabel' => $this->getResetButtonLabel(),
-            'sendButtonLabel' => $this->getSendButtonLabel(),
+            'sendButtonLabel' => $this->getSendButtonLabel()
         ])->render();
     }
 
