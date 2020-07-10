@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="card-body">
-        <table class="table table-bordered table-striped table-hover">
+        <table class="table @if($tableBordered) table-bordered @endif @if($tableStriped) table-striped @endif @if($tableHover) table-hover @endif @if($tableSmall) table-sm @endif">
             <thead>
                 <tr>
                     <th width="5%">#</th>

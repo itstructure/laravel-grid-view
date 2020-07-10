@@ -1,5 +1,12 @@
 ### CHANGE LOG:
 
+**1.0.4 July 10, 2020:**
+- Added grid attributes with default **true** value:
+    - `tableBordered`
+    - `tableStriped`
+    - `tableHover`
+    - `tableSmall`
+
 **1.0.3 July 10, 2020:**
 - Container changes for `.card` bootstrap css style.
 

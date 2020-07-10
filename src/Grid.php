@@ -102,6 +102,26 @@ class Grid
     protected $resetButtonLabel;
 
     /**
+     * @var bool
+     */
+    protected $tableBordered = true;
+
+    /**
+     * @var bool
+     */
+    protected $tableStriped = true;
+
+    /**
+     * @var bool
+     */
+    protected $tableHover = true;
+
+    /**
+     * @var bool
+     */
+    protected $tableSmall = true;
+
+    /**
      * Grid constructor.
      * @param array $config
      * @throws Exception
@@ -145,7 +165,11 @@ class Grid
             'useSendButtonAnyway' => $this->useSendButtonAnyway,
             'searchButtonLabel' => $this->getSearchButtonLabel(),
             'resetButtonLabel' => $this->getResetButtonLabel(),
-            'sendButtonLabel' => $this->getSendButtonLabel()
+            'sendButtonLabel' => $this->getSendButtonLabel(),
+            'tableBordered' => $this->tableBordered,
+            'tableStriped' => $this->tableStriped,
+            'tableHover' => $this->tableHover,
+            'tableSmall' => $this->tableSmall
         ])->render();
     }
 
