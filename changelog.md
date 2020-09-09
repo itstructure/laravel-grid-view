@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.0.5 September 10, 2020:**
+- Add support for Laravel 8
+
 **1.0.4 July 10, 2020:**
 - Added grid attributes with default **true** value:
     - `tableBordered`
