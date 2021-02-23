@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.0.6 February 23, 2021:**
+- Upgrade copyright year.
+
 **1.0.5 September 10, 2020:**
 - Add support for Laravel 8
 
