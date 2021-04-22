@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.0.7 April 22, 2021:**
+- Make possibility to publish views and translations.
+
 **1.0.6 February 23, 2021:**
 - Upgrade copyright year.
 

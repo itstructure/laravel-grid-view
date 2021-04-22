@@ -26,7 +26,7 @@ This package is to displaying the model data in a Grid table.
 
 Run the composer command:
 
-`composer require itstructure/laravel-grid-view "~1.0.6"`
+`composer require itstructure/laravel-grid-view "~1.0.7"`
 
 ### If you are testing this package from a local server directory
 
@@ -59,6 +59,26 @@ Register service provider in **config/app.php**
 ```php
 Itstructure\GridView\GridViewServiceProvider::class,       
 ```
+
+### Publish files (Not necessary)
+
+- To publish views run command:
+
+    `php artisan grid_view:publish --only=views`
+    
+    It stores view files to `resources/views/vendor/grid_view` folder.
+    
+- To publish translations run command:
+                
+    `php artisan grid_view:publish --only=lang`
+    
+    It stores translation files to `resources/lang/vendor/grid_view` folder.
+    
+- To publish all parts run command without `only` argument:
+
+    `php artisan grid_view:publish`
+    
+    Else you can use `--force` argument to rewrite already published files.
 
 ## Usage
 
