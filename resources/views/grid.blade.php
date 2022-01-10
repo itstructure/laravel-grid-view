@@ -64,7 +64,7 @@
                 </tr>
                 @if ($useFilters)
                     <tr>
-                        <form action="" method="get" id="grid_view_filters_form">
+                        <form action="{{ $filtersFormAction }}" method="get" id="grid_view_filters_form">
                             <td></td>
                             @foreach($columnObjects as $column_obj)
                                 <td>

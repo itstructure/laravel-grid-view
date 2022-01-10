@@ -82,6 +82,11 @@ class Grid
     protected $rowsFormAction = '';
 
     /**
+     * @var string
+     */
+    protected $filtersFormAction = '';
+
+    /**
      * @var bool
      */
     protected $useSendButtonAnyway = false;
@@ -162,6 +167,7 @@ class Grid
             'paginator' => $this->paginator,
             'title' => $this->title,
             'rowsFormAction' => $this->rowsFormAction,
+            'filtersFormAction' => $this->filtersFormAction,
             'useSendButtonAnyway' => $this->useSendButtonAnyway,
             'searchButtonLabel' => $this->getSearchButtonLabel(),
             'resetButtonLabel' => $this->getResetButtonLabel(),
