@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.0.9 March 6, 2022:**
+- Add support for Laravel 9
+
 **1.0.8 January 10, 2022:**
 - Readme fixes.
 - Add `filtersFormAction` attribute with empty default value.
