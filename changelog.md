@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.0.11 February 18, 2023:**
+- Add support for Laravel 10
+
 **1.0.10 January 23, 2023:**
 - Upgrade copyright year.
 
