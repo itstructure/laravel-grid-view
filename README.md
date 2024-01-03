@@ -26,7 +26,7 @@ This package is to displaying the model data in a Grid table.
 
 Run the composer command:
 
-`composer require itstructure/laravel-grid-view "~1.0.11"`
+`composer require itstructure/laravel-grid-view "~1.0.12"`
 
 ### If you are testing this package from a local server directory
 
@@ -467,6 +467,6 @@ $gridData = [
 
 ## License
 
-Copyright © 2020-2023 Andrey Girnik girnikandrey@gmail.com.
+Copyright © 2020-2024 Andrey Girnik girnikandrey@gmail.com.
 
 Licensed under the [MIT license](http://opensource.org/licenses/MIT). See LICENSE.txt for details.

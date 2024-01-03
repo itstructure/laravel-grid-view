@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.0.12 January 03, 2024**
+- Bug fix for showing pagination page totals.
+
 **1.0.11 February 18, 2023:**
 - Add support for Laravel 10
 

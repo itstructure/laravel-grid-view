@@ -18,7 +18,7 @@
             @if ($paginator->onFirstPage())
                 {!! trans('grid_view::grid.page-info', [
                     'start' => '<b>1</b>',
-                    'end' => '<b>' . $paginator->perPage() . '</b>',
+                    'end' => '<b>' . min($paginator->perPage(), $paginator->total()) . '</b>',
                     'total' => '<b>' . $paginator->total() . '</b>',
                 ]) !!}
             @elseif ($paginator->currentPage() == $paginator->lastPage())
