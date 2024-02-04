@@ -98,10 +98,10 @@
                         <td colspan="{{ count($columnObjects) + 1 }}">
                             <div class="mx-1">
                                 <div class="row">
-                                    <div class="col-12 col-xl-8 text-center text-xl-left">
+                                    <div class="col-12 col-lg-8 text-center text-lg-left">
                                         {{ $paginator->render('grid_view::pagination') }}
                                     </div>
-                                    <div class="col-12 col-xl-4 text-center text-xl-right">
+                                    <div class="col-12 col-lg-4 text-center text-lg-right">
                                         @if ($useFilters)
                                             <button id="grid_view_search_button" type="button" class="btn btn-primary">{{ $searchButtonLabel }}</button>
                                             <button id="grid_view_reset_button" type="button" class="btn btn-warning">{{ $resetButtonLabel }}</button>

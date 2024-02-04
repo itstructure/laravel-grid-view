@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.0 February 04, 2024**
+- Change from `col-xl-...` to `col-lg-...` in `tfoot` paginator and buttons containers.
+
 **1.0.12 January 03, 2024**
 - Bug fix for showing pagination page totals.
 
