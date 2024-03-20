@@ -14,7 +14,7 @@ This package is to displaying the model data in a Grid table.
 ![Grid view appearance](https://github.com/itstructure/laravel-grid-view/blob/master/laravel_grid_view_appearance_en.png)
 
 ## Requirements
-- laravel 5.5+ | 6+ | 7+ | 8+ | 9+ | 10+
+- laravel 5.5+ | 6+ | 7+ | 8+ | 9+ | 10+ | 11+
 - Bootstrap 4 for styling
 - JQuery
 - php >= 7.1
@@ -22,11 +22,11 @@ This package is to displaying the model data in a Grid table.
 
 ## Installation
 
-### General from remote packagist repository
+### General from remote repository
 
 Run the composer command:
 
-`composer require itstructure/laravel-grid-view "~1.1.0"`
+`composer require itstructure/laravel-grid-view "~1.1.1"`
 
 ### If you are testing this package from a local server directory
 
@@ -51,14 +51,6 @@ Here,
 Then run command:
 
 `composer require itstructure/laravel-grid-view:dev-master --prefer-source`
-
-### Registration
-
-Register service provider in **config/app.php**
-
-```php
-Itstructure\GridView\GridViewServiceProvider::class,       
-```
 
 ### Publish files (Not necessary)
 

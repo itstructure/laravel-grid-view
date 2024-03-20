@@ -48,7 +48,7 @@ class GridViewServiceProvider extends ServiceProvider
      */
     private function registerCommands(): void
     {
-        $this->commands(Commands\PublishCommand::class);
+        $this->commands(PublishCommand::class);
     }
 
 

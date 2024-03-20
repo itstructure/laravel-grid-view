@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.1 March 20, 2024:**
+- Add support for Laravel 11
+
 **1.1.0 February 04, 2024**
 - Change from `col-xl-...` to `col-lg-...` in `tfoot` paginator and buttons containers.
 
