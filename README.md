@@ -26,7 +26,7 @@ This package is to displaying the model data in a Grid table.
 
 Run the composer command:
 
-`composer require itstructure/laravel-grid-view "~1.1.2"`
+`composer require itstructure/laravel-grid-view "~1.1.3"`
 
 ### If you are testing this package from a local server directory
 

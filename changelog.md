@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.3 July 14, 2024:**
+- Small text fix.
+
 **1.1.2 July 14, 2024:**
 - Small fix for describing text in PublishCommand.
 

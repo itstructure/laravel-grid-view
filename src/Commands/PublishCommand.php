@@ -20,7 +20,7 @@ class PublishCommand extends Command
      */
     protected $signature = 'grid_view:publish '.
     '{--force : Overwrite existing files by default.}'.
-    '{--only= : Publish only specific part. Available parts: views, lang. This option can not be used.}';
+    '{--only= : Publish only specific part. Available parts: views, lang.}';
 
     /**
      * The console command description.
