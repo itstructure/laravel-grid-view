@@ -19,7 +19,7 @@ class PublishCommand extends Command
      * @var string
      */
     protected $signature = 'grid_view:publish '.
-    '{--force : Overwrite existing files by default. This option can not be used.}'.
+    '{--force : Overwrite existing files by default.}'.
     '{--only= : Publish only specific part. Available parts: views, lang. This option can not be used.}';
 
     /**
