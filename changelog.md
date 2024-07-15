@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.4 July 15, 2024:**
+- Fix README.
+
 **1.1.3 July 14, 2024:**
 - Small text fix.
 
