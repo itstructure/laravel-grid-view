@@ -2,7 +2,13 @@
     "name": "itstructure/laravel-grid-view",
     "description": "Grid view for laravel framework",
     "type": "library",
-    "keywords": ["laravel", "grid", "gridview", "view", "table"],
+    "keywords": [
+        "laravel",
+        "grid",
+        "gridview",
+        "view",
+        "table"
+    ],
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
