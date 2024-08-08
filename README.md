@@ -26,7 +26,7 @@ This package is to displaying the model data in a Grid table.
 
 Run the composer command:
 
-`composer require itstructure/laravel-grid-view "^1.1.4"`
+`composer require itstructure/laravel-grid-view "^1.1.5"`
 
 ### If you are testing this package from a local server directory
 
@@ -71,6 +71,14 @@ Then run command:
     `php artisan grid_view:publish`
     
     Else you can use `--force` argument to rewrite already published files.
+
+## Where this is already used (my packages)
+
+- [RBAC Manager](https://github.com/itstructure/laravel-rbac)
+
+- [Media File Uploader](https://github.com/itstructure/laravel-media-file-uploader)
+
+You can see this packages above as examples.
 
 ## Usage
 

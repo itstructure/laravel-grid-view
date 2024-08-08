@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.5 August 8, 2024:**
+- Add info to Readme where this package is already used in **itstructure** packages.
+
 **1.1.4 July 15, 2024:**
 - Fix README.
 
