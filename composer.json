@@ -2,7 +2,13 @@
     "name": "itstructure/laravel-grid-view",
     "description": "Grid view for laravel framework",
     "type": "library",
-    "keywords": ["laravel", "grid", "gridview", "view", "table"],
+    "keywords": [
+        "laravel",
+        "grid",
+        "gridview",
+        "view",
+        "table"
+    ],
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -14,7 +20,7 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "laravel/framework": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0"
+        "laravel/framework": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0"
     },
     "autoload": {
         "psr-4": {
