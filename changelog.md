@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.6 February 26, 2025:**
+- Add Laravel 12 support.
+
 **1.1.5 August 8, 2024:**
 - Add info to Readme where this package is already used in **itstructure** packages.
 
