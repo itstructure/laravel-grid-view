@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.7 February 28, 2025:**
+- Small README fix.
+
 **1.1.6 February 26, 2025:**
 - Add Laravel 12 support.
 
