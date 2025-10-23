@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.8 October 23, 2025:**
+- Improve scrutinizer config to run with composer 2.
+
 **1.1.7 February 28, 2025:**
 - Small README fix.
 
