@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.10 June 14, 2026:**
+- Remove prefer source from scrutinizer.
+
 **1.1.9 June 14, 2026:**
 - Add Laravel 13 support.
 
