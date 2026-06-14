@@ -1,5 +1,8 @@
 ### CHANGE LOG:
 
+**1.1.9 June 14, 2026:**
+- Add Laravel 13 support.
+
 **1.1.8 October 23, 2025:**
 - Improve scrutinizer config to run with composer 2.
 
